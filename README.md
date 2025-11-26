@@ -1,6 +1,6 @@
 # Tarefa 1: Simulação de `for` em NASM (Assembly x86)
 
-Este repositório contém a solução para a **Tarefa 1 de Pré-processador** da disciplina de Software Básico[cite: 530]. O objetivo é implementar macros que simulem o comportamento da estrutura de repetição `for` da linguagem C dentro do Assembly NASM, permitindo o uso de loops aninhados de forma intuitiva.
+Este repositório contém a solução para a **Tarefa 1 de Pré-processador** da disciplina de Software Básico. O objetivo é implementar macros que simulem o comportamento da estrutura de repetição `for` da linguagem C dentro do Assembly NASM, permitindo o uso de loops aninhados de forma intuitiva.
 
 ## 📋 Descrição
 
@@ -8,8 +8,8 @@ O projeto utiliza o pré-processador do NASM para traduzir uma sintaxe de alto n
 
 As principais características da implementação são:
 * **Sintaxe estilo C:** `for {inicialização}, {comparação}, condição_salto, {incremento}`.
-* **Suporte a aninhamento:** Utiliza a *Pilha de Contexto* (`%push`, `%pop`) para permitir loops dentro de loops sem conflito de rótulos[cite: 1253].
-* **Integração com C:** Utiliza a biblioteca `asm_io` (Paul Carter) e um driver em C para facilitar a entrada e saída de dados[cite: 695].
+* **Suporte a aninhamento:** Utiliza a *Pilha de Contexto* (`%push`, `%pop`) para permitir loops dentro de loops sem conflito de rótulos.
+* **Integração com C:** Utiliza a biblioteca `asm_io` (Paul Carter) e um driver em C para facilitar a entrada e saída de dados.
 
 ## 📂 Estrutura de Arquivos
 
@@ -32,7 +32,6 @@ Para compilar e executar este projeto, você precisará de:
 Este projeto foi desenvolvido para arquitetura **32-bits** (x86). Siga as instruções de acordo com seu sistema operacional.
 
 ### Opção 1: Windows (PowerShell)
-
 ```powershell
 # 1. Montar o arquivo principal
 nasm -f win32 tarefa1.asm -o tarefa1.obj
@@ -45,3 +44,4 @@ gcc -m32 -o tarefa1.exe driver.c tarefa1.obj asm_io.obj
 
 # 4. Executar
 .\tarefa1.exe
+   
