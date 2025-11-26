@@ -1,6 +1,6 @@
 # Tarefa 1: Simulação de `for` em NASM (Assembly x86)
 
-[cite_start]Este repositório contém a solução para a **Tarefa 1 de Pré-processador** da disciplina de Software Básico[cite: 530]. O objetivo é implementar macros que simulem o comportamento da estrutura de repetição `for` da linguagem C dentro do Assembly NASM, permitindo o uso de loops aninhados de forma intuitiva.
+Este repositório contém a solução para a **Tarefa 1 de Pré-processador** da disciplina de Software Básico[cite: 530]. O objetivo é implementar macros que simulem o comportamento da estrutura de repetição `for` da linguagem C dentro do Assembly NASM, permitindo o uso de loops aninhados de forma intuitiva.
 
 ## 📋 Descrição
 
@@ -8,8 +8,8 @@ O projeto utiliza o pré-processador do NASM para traduzir uma sintaxe de alto n
 
 As principais características da implementação são:
 * **Sintaxe estilo C:** `for {inicialização}, {comparação}, condição_salto, {incremento}`.
-* [cite_start]**Suporte a aninhamento:** Utiliza a *Pilha de Contexto* (`%push`, `%pop`) para permitir loops dentro de loops sem conflito de rótulos[cite: 1253].
-* [cite_start]**Integração com C:** Utiliza a biblioteca `asm_io` (Paul Carter) e um driver em C para facilitar a entrada e saída de dados[cite: 695].
+* **Suporte a aninhamento:** Utiliza a *Pilha de Contexto* (`%push`, `%pop`) para permitir loops dentro de loops sem conflito de rótulos[cite: 1253].
+* **Integração com C:** Utiliza a biblioteca `asm_io` (Paul Carter) e um driver em C para facilitar a entrada e saída de dados[cite: 695].
 
 ## 📂 Estrutura de Arquivos
 
